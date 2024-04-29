@@ -6,3 +6,5 @@ export const store = configureStore({
         counter: counterReducer
     },
 })
+
+//store üzerinden statelere erişilecek. Bunun için main.jsx te app componenti provider ile sarmalandı.
