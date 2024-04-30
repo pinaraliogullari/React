@@ -5,16 +5,6 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
-        "**/Thumbs.db": true,
-        "[!8]*/**": true,
-        "8[!.]*/**": true,
-        "8.[!R]*/**": true,
-        "8.R[!e]*/**": true,
-        "8.Re[!d]*/**": true,
-        "8.Red[!u]*/**": true,
-        "8.Redu[!x]*/**": true,
-        "8.Redux/[!s]*/**": true,
-        "8.Redux/s[!r]*/**": true,
-        "8.Redux/sr[!c]*/**": true
+        "**/Thumbs.db": true
     }
 }
