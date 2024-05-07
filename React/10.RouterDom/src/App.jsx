@@ -1,12 +1,14 @@
-import './App.css'; // CSS dosyasını içe aktarırken doğru dosya yolu kullanılmalı
+import './App.css';
 
 import { Routes, Route } from 'react-router-dom';
-import About from './pages/About';
-import Home from './pages/Home';
-import Contact from './pages/Contact';
-import Products from './pages/Products';
-import NotFoundPage from './pages/NotFoundPage'; // Büyük-küçük harf uyumsuzluğunu düzeltin
-import Header from './components/Header'; // Büyük-küçük harf uyumsuzluğunu düzeltin
+import About from './Pages/About';
+import Home from './Pages/Home';
+import Contact from './Pages/Contact';
+import Products from './Pages/Products';
+import EmployeeAbout from './Pages/EmployeeAbout';
+import CompanyAbout from './Pages/CompanyAbout';
+import NotFoundPage from './Pages/NotFoundPage';
+import Header from './Components/Header';
 
 function App() {
   return (
@@ -14,7 +16,10 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
+        <Route path='/about' element={<About />} >
+          <Route path='employee' element={<EmployeeAbout />} /> {/* nested routeların başına / koyulmaz */}
+          <Route path='company' element={<CompanyAbout />} />
+        </Route>
         <Route path='/products' element={<Products />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<NotFoundPage />} />
