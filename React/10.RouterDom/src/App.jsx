@@ -9,6 +9,7 @@ import EmployeeAbout from './Pages/EmployeeAbout';
 import CompanyAbout from './Pages/CompanyAbout';
 import NotFoundPage from './Pages/NotFoundPage';
 import Header from './Components/Header';
+import ProductDetails from './Pages/ProductDetails';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='company' element={<CompanyAbout />} />
         </Route>
         <Route path='/products' element={<Products />} />
+        <Route path='/product-details/:id' element={<ProductDetails />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
