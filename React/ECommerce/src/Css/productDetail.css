@@ -1,0 +1,46 @@
+.main{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+}
+
+.detail-image{
+    width:300px;
+    height:500px;
+}
+
+.title{
+    font-family:arial;
+}
+.desc{
+    font-family:arial;
+    font-size:20px;
+}
+
+.price{
+     font-family:arial;
+    font-size:40px;
+    font-weight:bold;
+    color:rgb(185,76,76);
+}
+.counter-icon{
+    font-size:40px;
+}
+
+.counter-value{
+    font-size:35px;
+}
+.basket{
+    margin-top:25px;
+    border:none;
+    padding:10px;
+    background-color:rgb(185,76,76);
+    border-radius:5px;
+    color:#fff;
+
+}
+
+.basket:hover{
+    cursor:pointer;
+   font-weight:bold;
+}
