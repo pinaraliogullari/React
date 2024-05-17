@@ -1,2 +1,10 @@
 # React Js
-In this repository, you can find the work I did while strengthening my React knowledge.
+
+Here you can find some of my basic projects that I developed while learning React Js.
+
+## Packages
+- react-router-dom
+- react-icons
+- reduxjs/toolikt
+- mui/material  
+- axios
